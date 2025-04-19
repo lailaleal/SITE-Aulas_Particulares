@@ -1,0 +1,198 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.titulo h1 {
+    font-size: 48px;
+    margin: 0;
+    color: #333333;
+}
+
+.titulo h2 {
+    font-size: 36px;
+    margin: 0;
+    color: #333333;
+}
+
+/* Estilos da seção de destaque */
+.destaque {
+    background-color: #ffb6c1; /* Rosa claro */
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto-destaque {
+    width: 60%;
+}
+
+.texto-destaque h2 {
+    font-size: 50px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.texto-destaque p {
+    font-size: 40px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.professor {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.imagem-destaque {
+    width: 35%;
+}
+
+.imagem-destaque img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Estilos da seção de atendimento */
+.atendimento {
+    background-color: #f9f5eb; /* Bege claro */
+    padding: 40px;
+}
+
+.atendimento h2 {
+    font-size: 50px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.atendimento-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagem-atendimento {
+    width: 45%;
+}
+
+.imagem-atendimento img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.texto-atendimento {
+    width: 45%;
+    text-align: center;
+}
+
+.texto-atendimento h3 {
+    font-size: 40px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #333333;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.botao:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Estilos da seção de acesso */
+.acesso {
+    background-color: #c5e1a5; /* Verde claro */
+    padding: 40px;
+}
+
+.acesso-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.primeiro-acesso, .login {
+    width: 45%;
+    text-align: center;
+    background-color: #f9f5eb;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.primeiro-acesso img, .login img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.botao-acesso {
+    display: inline-block;
+    background-color: #ff6b6b; /* Vermelho claro */
+    color: #ffffff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.botao-acesso:hover {
+    background-color: #ff5252; /* Vermelho mais escuro */
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .destaque, .atendimento-container, .acesso-container {
+        flex-direction: column;
+    }
+    
+    .texto-destaque, .imagem-destaque, 
+    .imagem-atendimento, .texto-atendimento,
+    .primeiro-acesso, .login {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
